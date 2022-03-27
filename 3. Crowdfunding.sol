@@ -27,7 +27,7 @@ contract Crowdfunding {
     constructor(uint256 _goal, uint256 _deadline) {
         admin = msg.sender;
         minContribution = 100 wei;
-        deadline = block.timestamp + _deadline;
+        deadline = block.timestamp + _deadline; // 초(seconds) 단위
         goal = _goal;
     }
 
